@@ -21,9 +21,9 @@ A lightweight, web-controlled RGB LED controller using the **CH591R microcontrol
   * 32 MHz crystal oscillator with **two 22 pF capacitors**
   * External antenna for wireless communication
   * LED data line connected to the specified MCU GPIO pin
-* **USB connection** required for both power and control
+* **USB connection** required for both power and control(follow datasheet)
 
-> ⚠️ Make sure your power supply matches the LED strip requirements. WS2812B LEDs typically require 5V and can draw significant current for longer strips.
+> ⚠️ Make sure your power supply matches the LED strip requirements. WS2812B LEDs typically require 3.3V-5V and can draw significant current for longer strips.
 
 ## Booting / Flashing the MCU
 
@@ -44,7 +44,7 @@ To enter bootloader mode:
 
 1. CH591R hosts a small web server serving `/WEB.html`.
 2. Connect via browser on the same network.
-3. Web page sends control commands to the MCU via USB.
+3. Web page sends control commands to the MCU via BLE V5.4.
 4. MCU translates commands into WS2812B protocol to update LED colors and patterns.
 
 ## Setup
