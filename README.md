@@ -1,11 +1,13 @@
 # WS2812B RGB LED Controller with CH591R MCU
 
-A lightweight, web-controlled RGB LED controller using the **CH591R microcontroller** and **WS2812B LED strip**. Control your LEDs from a browser via a simple web interface (`/WEB.html`).
+A lightweight, web-controlled RGB LED controller using the **CH591R microcontroller** and **WS2812B LED strip**. Control your LEDs from a browser via a simple web interface (`/index.html`).
+
+Ready to use web page is available at [here](https://amir1387aht.github.io/CH591R-BLE/)
 
 ## Features
 
 * Control **WS2812B RGB LEDs** with **CH591R MCU**
-* Web interface hosted on `/WEB.html` for easy control
+* Web interface hosted on `/index.html` for easy control
 * Customizable LED colors, patterns, and brightness
 * Firmware is based on example BLE code with minor modifications for web control
 * Efficient, compact firmware ideal for embedded projects
@@ -37,12 +39,12 @@ To enter bootloader mode:
 
 ## Software
 
-* **Web Page:** `/WEB.html` – user interface for LED control
+* **Web Page:** `/index.html` – user interface for LED control
 * **Firmware:** Custom CH591R firmware derived from BLE examples, modified for web-based control, Compile with ``` MounRiver Studio II ```
 
 ### How It Works
 
-1. CH591R hosts a small web server serving `/WEB.html`.
+1. CH591R hosts a small web server serving `/index.html`.
 2. Connect via browser on the same network.
 3. Web page sends control commands to the MCU via BLE V5.4.
 4. MCU translates commands into WS2812B protocol to update LED colors and patterns.
