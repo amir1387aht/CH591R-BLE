@@ -20,7 +20,7 @@ Ready to use web page is available at [here](https://amir1387aht.github.io/CH591
 
   * 0.47 µF capacitor between **VINTA** and **GND**
   * 10 µF capacitor between **VCC** and **GND**
-  * 32 MHz crystal oscillator with **two 22 pF capacitors**
+  * 32 MHz crystal oscillator without any capacitors, the mcu has internal cap for crystal pins, in YouTube video I didnt know this so there were caps
   * External antenna for wireless communication
   * LED data line connected to the specified MCU GPIO pin
 * **USB connection** required for both power and control(follow datasheet)
