@@ -55,12 +55,12 @@ To enter bootloader mode:
 2. Enter bootloader mode as described above.
 3. Flash the firmware to the CH591R MCU.
 4. Power the MCU and LED strip.
-5. Open `/WEB.html` in a browser.
+5. Open `/index.html` in a browser.
 6. Adjust colors, patterns, and brightness from the web interface.
 
 ## Customization
 
-* Modify `/WEB.html` to update UI or add features
+* Modify `/index.html` to update UI or add features
 * Adjust firmware for new LED patterns, brightness limits, or GPIO pins
 
 ## Notes
